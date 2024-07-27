@@ -40,13 +40,13 @@ const Banner = () => {
           allowfullscreen
         ></iframe>
       </div>
-      {/* button  */}
+      {/* common button */}
       <div className="mt-12 text-center">
         <button className="bg-[#BB2121] md:text-3xl font-bold px-6 py-4 shadow-xl rounded-lg text-white border-2 border-white hover:bg-[#2c6036] hover:scale-95 transition duration-200">
           অর্ডার করতে চাই
         </button>
       </div>
-      {/* section  */}
+      {/* text section  */}
       <div className="max-w-screen-xl mx-auto px-4 text-center mt-12">
         <h1 className="bg-[#2c6036] rounded-xl p-8 text-white md:text-4xl font-bold shadow-lg">
           Allah 99 Names হতে পারে সব থেকে দামি উপহার কারণ আল্লাহ বলেন কোন বান্দা
