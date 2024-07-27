@@ -14,8 +14,9 @@ const Order = () => {
     console.log(data);
   };
 
+  
   return (
-    <div className="mt-8 px-6 pb-12">
+     <div className="mt-8 px-6 pb-12">
       <div className="max-w-screen-xl border-[8px] rounded-xl border-[#2c6036] mx-auto px-6 pt-8 pb-16">
         <h1 className="bg-[#2c6036] p-4 rounded-lg text-center text-xl md:text-4xl text-white font-bold">
         অর্ডার করতে নিচের ফর্মটি সঠিক তথ্য দিয়ে পূরন করুন
@@ -26,7 +27,7 @@ const Order = () => {
             <h2 className="font-bold text-xl">Billing details</h2>
             {/* form Start  */}
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="mt-4 ">
+              <div className="mt-4">
                 <label className="block text-sm mb-2">
                   আপনার নাম লিখুন <span className="text-red-500">*</span>
                 </label>
