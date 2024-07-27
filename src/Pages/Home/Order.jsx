@@ -15,13 +15,10 @@ const Order = () => {
   };
 
   return (
-    <div className=" mt-8 px-6 ">
-      <div className="max-w-screen-xl border-[8px] border-[#2c6036] mx-auto px-6 pt-8 pb-16">
-        <h1 className="bg-[#2c6036] p-4 text-center text-2xl text-white font-bold">
-          অর্ডার করতে নিচের ফর্মটি সম্পূর্ন পূরন করুন।
-        </h1>
-        <h1 className="text-xl font-bold mt-7">
-          অর্ডার করতে নিচের তথ্যগুলো দিন
+    <div className=" mt-8 px-6 pb-12">
+      <div className="max-w-screen-xl border-[8px] rounded-xl border-[#2c6036] mx-auto px-6 pt-8 pb-16">
+        <h1 className="bg-[#2c6036] p-4 rounded-lg text-center text-xl md:text-4xl text-white font-bold">
+        অর্ডার করতে নিচের ফর্মটি সঠিক তথ্য দিয়ে পূরন করুন
         </h1>
         {/* order page  */}
         <div className="flex flex-col md:flex-row gap-8 justify-between mt-8 ">
