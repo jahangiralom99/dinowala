@@ -1,5 +1,4 @@
 import { useForm } from "react-hook-form";
-import { FaLock } from "react-icons/fa";
 import { IoMdArrowDropup } from "react-icons/io";
 import logo from "../../assets/lotus-esmaul-husna-metal-tablo-altin-renk-uv-_31701336494.jpg";
 import check from "../../assets/check.webp";

@@ -4,7 +4,6 @@ import img2 from "../../assets/lotus-esmaul-husna-metal-tablo-altin-renk-uv-_317
 import img3 from "../../assets/3D-Colorful-Metal-99-Names-of-Allah-Wall-Art-Asmaul-Husna-Gold-in-Qatar-2-600x60017028308051703061736.jpg";
 import check from "../../assets/check.webp";
 import check2 from "../../assets/Screenshot 2024-07-27 121120.png";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
