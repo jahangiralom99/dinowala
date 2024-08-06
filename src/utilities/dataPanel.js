@@ -4,8 +4,8 @@ const fetch_url = "https://erpmethods.vercel.app";
 
 const header = {
   url: base_url,
-  api_secret: "bcc0df87d4b1a77",
-  api_key: "092867a6814bfc7",
+  api_secret: "a2336612002301a",
+  api_key: "84859bedced40f4",
   "Content-Type": "application/json",
 };
 

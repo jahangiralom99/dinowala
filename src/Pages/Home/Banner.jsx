@@ -11,8 +11,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { ItemContext } from "../../App";
 
 const Banner = () => {
+  const {name} = useParams();
+  const itemData = useContext(ItemContext);
+  const [loader, setLoader] = useState(true);
+  const [landing, setLanding] = useState([]);
+
+  useEffect(() => {
+    let itmFind = itemData.find((item) => item.name === name);
+    setLanding([itmFind]);
+    setLoader(false);
+  }, [name, itemData]);
+
+  const formatStyle = (params) => {
+    if (landing[0] && landing[0][params]) {
+      return landing[0][params].split("<br>").map((part, index, parts) => (
+        <span key={index}>
+          {part}
+          {index < parts.length - 1 && <br />}
+        </span>
+      ));
+    }
+  };
+
+
   return (
     <div>
       {/* Banner start */}

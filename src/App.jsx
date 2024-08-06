@@ -1,13 +1,20 @@
+import { createContext } from "react";
+import { Outlet, useLoaderData } from "react-router-dom";
 
-import { Outlet } from 'react-router-dom'
+export const ItemContext = createContext([]);
 
 function App() {
+  const { groups, webItems, items } = useLoaderData();
+
+  console.log(items);
 
   return (
     <div>
-      <Outlet/>
-   </div>
-  )
+      <ItemContext.Provider value={items}>
+        <Outlet />
+      </ItemContext.Provider>
+    </div>
+  );
 }
 
-export default App
+export default App;
