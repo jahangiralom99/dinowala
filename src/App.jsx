@@ -6,7 +6,7 @@ export const ItemContext = createContext([]);
 function App() {
   const { groups, webItems, items } = useLoaderData();
 
-  console.log(items);
+  // console.log(items);
 
   return (
     <div>
