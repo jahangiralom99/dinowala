@@ -1,9 +1,9 @@
 import logo from "../../assets/OO715K1.png";
-import img1 from "../../assets/lotus-esmaul-husna-altin-renk_2_1800x180017028308051703061736.webp";
-import img2 from "../../assets/lotus-esmaul-husna-metal-tablo-altin-renk-uv-_31701336494.jpg";
-import img3 from "../../assets/3D-Colorful-Metal-99-Names-of-Allah-Wall-Art-Asmaul-Husna-Gold-in-Qatar-2-600x60017028308051703061736.jpg";
+// import img1 from "../../assets/lotus-esmaul-husna-altin-renk_2_1800x180017028308051703061736.webp";
+// import img2 from "../../assets/lotus-esmaul-husna-metal-tablo-altin-renk-uv-_31701336494.jpg";
+// import img3 from "../../assets/3D-Colorful-Metal-99-Names-of-Allah-Wall-Art-Asmaul-Husna-Gold-in-Qatar-2-600x60017028308051703061736.jpg";
 import check from "../../assets/check.webp";
-import check2 from "../../assets/Screenshot 2024-07-27 121120.png";
+// import check2 from "../../assets/Screenshot 2024-07-27 121120.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
