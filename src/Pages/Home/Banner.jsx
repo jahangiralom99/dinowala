@@ -14,6 +14,7 @@ import { Pagination } from "swiper/modules";
 import { useContext, useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
 import { ItemContext } from "../../App";
+import { base_url } from "../../utilities/dataPanel";
 
 const Banner = () => {
   // const {name} = useParams();
@@ -22,9 +23,7 @@ const Banner = () => {
   const [landing, setLanding] = useState([]);
 
   useEffect(() => {
-    let itmFind = itemData.find(
-      (item) => item.name === "4567"
-    );
+    let itmFind = itemData.find((item) => item.name === "4567");
     console.log(itmFind);
     setLanding([itmFind]);
     setLoader(false);
@@ -55,7 +54,7 @@ const Banner = () => {
                 {formatStyle("custom_head_1")}
               </h2>
               <h3 className="text-[#63E5FF] md:text-2xl font-bold mt-4">
-               {formatStyle("custom_head_2")}
+                {formatStyle("custom_head_2")}
               </h3>
             </div>
             <div className="shapes -bottom-2 left-0"></div>
@@ -79,7 +78,7 @@ const Banner = () => {
           {/* text section  */}
           <div className="max-w-screen-xl mx-auto px-4 text-center mt-12">
             <h1 className="bg-[#2c6036] rounded-xl p-8 text-white md:text-4xl font-bold shadow-lg">
-             {formatStyle("custom_text_3")}
+              {formatStyle("custom_text_3")}
             </h1>
           </div>
           {/* Carosel or Swiper */}
@@ -112,19 +111,34 @@ const Banner = () => {
                 className="mySwiper mt-12"
               >
                 <SwiperSlide>
-                  <img src={img1} alt="" />
+                  <img
+                    src={`${base_url + landing[0]?.custom_upload_text_image_1}`}
+                    alt=""
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={img2} alt="" />
+                  <img
+                    src={`${base_url + landing[0]?.custom_upload_text_image_2}`}
+                    alt=""
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={img3} alt="" />
+                  <img
+                    src={`${base_url + landing[0]?.custom_upload_text_image_3}`}
+                    alt=""
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={img1} alt="" />
+                  <img
+                    src={`${base_url + landing[0]?.custom_upload_text_image_1}`}
+                    alt=""
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={img2} alt="" />
+                  <img
+                    src={`${base_url + landing[0]?.custom_upload_text_image_2}`}
+                    alt=""
+                  />
                 </SwiperSlide>
               </Swiper>
               {/* button  */}
@@ -140,53 +154,45 @@ const Banner = () => {
             <div className="max-w-screen-xl mx-auto px-4 mt-12 border-[9px] border-[#2c6036] p-12 font-bold text-xl">
               {/*ক্যালিগ্রাফী এর তৈরিকরণ   */}
               <div className="shadow-2xl p-5 rounded-2xl">
-                <h2 className="">ক্যালিগ্রাফী এর তৈরিকরণ ।</h2>
+                <h2 className="">{formatStyle("custom_text_5")}</h2>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p> আল্লাহু এবং আল্লাহর গুনবাচক ৯৯ নাম</p>
+                  <p>{formatStyle("custom_text_6")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p> ঝুলানো সহজ (ওয়াল আর্টের পিছনে টুথ হ্যাঙ্গার)</p>
+                  <p>{formatStyle("custom_text_7")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p>
-                    {" "}
-                    সুন্দর 3D Effect পেতে ক্যালিগ্রাফি এর পাঁপড়ি গুলা বাঁকা করতে
-                    হবে।
-                  </p>
+                  <p>{formatStyle("custom_text_8")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p> Size (20/20 inch)</p>
+                  <p>{formatStyle("custom_text_9")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p>
-                    {" "}
-                    মেটেরিয়ালসঃ (Ms) লোহার পাতের উপর গ্যালভানাইজিং
-                    প্রক্রিয়ায়স্টেইনলেস স্টিল এর প্রলেপ দেওয়া
-                  </p>
+                  <p>{formatStyle("custom_text_10")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p> হয়েছে যার ফলে মরিচা পরবে না কখনই</p>
+                  <p>{formatStyle("custom_text_11")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p> কালার গ্যারান্টি আজীবন।</p>
+                  <p>{formatStyle("custom_text_12")}</p>
                 </div>
                 <div className="flex items-center gap-4 mt-6">
                   <img className="w-6" src={check} alt="" />
-                  <p>পুরুত্ত - ০.৮ মি.মি.</p>
+                  <p>{formatStyle("custom_text_13")}</p>
                 </div>
               </div>
               {/* Price Section */}
               <div className="mt-5 shadow-2xl rounded-2xl bg-white ">
                 <img
                   className="lg:max-w-screen-md mx-auto"
-                  src={check2}
+                  src={`${base_url + landing[0]?.custom_upload_text_image_4}`}
                   alt=""
                 />
               </div>
